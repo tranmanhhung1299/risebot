@@ -1,0 +1,93 @@
+@use '../abstracts/' as *;
+.page-title {
+    padding: 146px 0 59px;
+    position: relative;
+    .icon_bg {
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        z-index: -1;
+        mix-blend-mode: luminosity;
+    }
+}
+
+
+.tf-section {
+    position: relative;
+    padding: 0 0 100px;
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+
+.tf-token {
+    .counter_wrapper {
+        width: 34%;
+    }
+    .char_wrapper {
+        @include flex2;
+        width: 66%;
+        padding-left: 100px;
+        border-left: 1px solid rgba(255,255,255,0.1);
+    }
+    .chart_inner {
+        margin-top: 0px;
+        width: 75%;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        align-items: center;
+        justify-content: center;
+        .content_inner {
+            text-align: center;
+            position: absolute;
+            padding-top: 16px;
+            padding-left: 20px;
+            img {
+                margin-bottom: 9px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+.home1 {
+    .tf-section {
+        &.project {
+            padding-bottom: 95px;
+        }
+        &.project_2 {
+            padding-bottom: 98px;
+        }
+        &.project_3 {
+            padding-bottom: 115px;
+        }
+        &.tf_team {
+            padding-bottom: 80px;
+        }
+        &.tf_partner {
+            padding-bottom: 95px;
+        }
+        &.tf_CTA {
+            padding-bottom: 0;
+        }
+        &.tf-token {
+            padding-bottom: 50px;
+        }
+        &.project_4 {
+            padding-top: 50px;
+        }
+    }
+}

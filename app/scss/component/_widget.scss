@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+.widget-link {
+    li {
+        a {
+            &:hover {
+                color: $color-main1;
+            }
+        }
+    }
+}
+
+.widget-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    text-transform: capitalize;
+}

@@ -340,10 +340,25 @@
     }
 }
 
+.slider-10 {
+    padding: 20px 0 30px
+}
+
+.prev_slider.prev_slider-7,
+.next_slider.next_slider-7 {
+    top: 62%;
+}
+
 .prev_slider {
     left: 0;
 }
 
 .next_slider {
     right: 0;
+}
+
+.swiper-pagination.pagination_slider-6 {
+    justify-content: center;
+    margin-top: 23px;
+    text-align: center;
 }

@@ -369,27 +369,129 @@
                 contentActive.addClass('active').fadeIn("slow");
                 contentActive.siblings().removeClass('active');
                 $(this).addClass('active').parents('.flat-tabs').find('.content-tab').children().eq(liActive).siblings().hide();
+                swiper_tab();
+                swiper_tab2();
+                swiper_tab3();
             });
         });
     };
 
-    var tabs2 = function(){
-        $('.flat-tabs-style2').each(function(){
-            $(this).find('.content-tab').children().hide();
-            $(this).find('.content-tab').find('.content-inner.active').show();
-            $(this).find('.menu-tab').children('li').on('click',function(){
-                var liActive = $(this).index();
-                console.log(liActive);
-                var contentActive=$(this).siblings().removeClass('active').parents('.flat-tabs-style2').find('.content-tab').children().eq(liActive);
-                contentActive.toggleClass('active').fadeIn("slow");
-                contentActive.siblings().removeClass('active');
-                $(this).addClass('active').parents('.flat-tabs-style2').find('.content-tab').children().eq(liActive).siblings().hide();
-            });
-            $(this).find('.content-tab').find('.content-inner').find('.btn-delete').on('click',function(){
-                $('.content-tab').find('.content-inner').hide();
-            });
+    var swiper_tab = function(){
+        var swiper_tab =  new Swiper(".slider-3", {
+            loop:false,
+            slidesPerView: 1,
+            slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
+            spaceBetween: 30,
+            navigation: {
+                clickable: true,
+                nextEl: ".next_slider-3",
+                prevEl: ".prev_slider-3",
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+            },
         });
     };
+
+    var swiper_tab2 = function(){
+        var swiper_tab2 =  new Swiper(".slider-4", {
+            loop:false,
+            slidesPerView: 1,
+            slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
+            spaceBetween: 30,
+            navigation: {
+                clickable: true,
+                nextEl: ".next_slider-4",
+                prevEl: ".prev_slider-4",
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    };
+
+    var swiper_tab3 = function(){
+        var swiper_tab3 =  new Swiper(".slider-5", {
+            loop:false,
+            slidesPerView: 1,
+            slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
+            spaceBetween: 30,
+            navigation: {
+                clickable: true,
+                nextEl: ".next_slider-5",
+                prevEl: ".prev_slider-5",
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    };
+
+    var donatProgress = function () {
+        $(".content-progress-box").appear(function () {
+            $('.progress-bar').each(function() {
+                $(this).find('.progress-content').animate({
+                  width:$(this).attr('data-percentage')
+                },3000);
+        
+                $(this).find('.progress-number-mark').animate(
+                  {left:$(this).attr('data-percentage')},
+                  {
+                    duration: 3000,
+                    step: function(num, fx) {
+                        let data = Math.round(num * 100) / 100 ;
+                        $(this).find('.percent').html(data + '%');
+                    }
+                });  
+              });
+        });
+    };
+
 
     var goTop = function() {
         $(window).scroll(function() {
@@ -480,6 +582,32 @@
         }, 800);
     };
 
+    // var flatCounter = function () {
+    //     if ($(document.body).hasClass("counter-scroll")) {
+    //       var a = 0;
+    //       $(window).scroll(function () {
+    //         var oTop = $(".counter").offset().top - window.innerHeight;
+    //         if (a == 0 && $(window).scrollTop() > oTop) {
+    //           if ($().countTo) {
+    //             $(".counter")
+    //               .find(".count-number")
+    //               .each(function () {
+    //                 var to = $(this).data("to"),
+    //                   speed = $(this).data("speed"),
+    //                   formatter = $(this).data('formatter');
+    //                 $(this).countTo({
+    //                   to: to,
+    //                   speed: speed,
+    //                   formatter: formatter,
+    //                 });
+    //               });
+    //           }
+    //           a = 1;
+    //         }
+    //       });
+    //     }
+    // };
+  
     var flatCounter = function () {
         if ($(document.body).hasClass("counter-scroll")) {
           var a = 0;
@@ -505,7 +633,8 @@
           });
         }
     };
-  
+
+
     // Dom Ready
     $(function () {
         retinaLogos();
@@ -514,8 +643,10 @@
         ajaxSubscribe.eventLoad();
         ajaxContactForm();
         alertBox();
+        swiper_tab();
+        swiper_tab2();
+        swiper_tab3();
         tabs();
-        tabs2();
         goTop();
         AOS.init();
         flatAccordion();
@@ -525,10 +656,11 @@
         dropdown('#category');
         no_link();
         flatCounter();
-        // ButtonSlide();
+
         $(window).on("load resize", function () {
             parallax();
         });
+        donatProgress();
         loadmore();
         Preloader();
     });

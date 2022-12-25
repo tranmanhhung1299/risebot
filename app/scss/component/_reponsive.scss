@@ -62,6 +62,10 @@
             width: 20%;
         }
     }
+
+    .project-box-style5 .content-inner ul li .price {
+        font-size: 12px;
+    }
 }
 
 @include res991 {
@@ -104,11 +108,49 @@
             }
         }
     }
+
+    .container.w_1320 .container_inner {
+        padding: 0 80px;
+    }
+    .image-box {
+        margin-bottom: 60px;
+    }
+
+    .content_technology {
+        padding: 0;
+    }
+    .img_technology .coin.coin_6 {
+        left: 0;
+    }
+
+    .home2 .partner_CTA .image {
+        text-align: center;
+    }
 }
 
 @include res767 {
+    .home2 .project2 .container.w_1280 .container_inner,
+    .container.w_1850 .container_inner,
+    .container.w_1280 .container_inner,
+    .container.w_1320 .container_inner {
+        padding: 0;
+    }
+
+    .home2 .tf-section.partner {
+        padding: 0 !important;
+    }
     .project-box-style3_wrapper {
         margin-top: 30px;
+    }
+
+    .project-box-style4 {
+        .content h5 {
+            text-align: center;
+        }
+        .image {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     .home1 .project_4 {
         .tf-title {
@@ -135,8 +177,9 @@
             }
         }
     }
+    .home2 .tf-section.FAQs,
     .home1 .tf-section.tf_CTA {
-        padding-bottom: 100px;
+        padding-bottom: 100px !important;
     }
     .tf-section.tf_CTA {
         .overlay {
@@ -242,6 +285,20 @@
     .tf-title {
         margin-bottom: 30px !important;
     }
+    .img_technology {
+        padding: 100px 0;
+        .coin.coin_5 {
+            right: 0;
+            width: 200px;
+            height: 200px;
+        }
+        .coin.coin_2 {
+            width: 40%;
+        }
+    }
+    .swiper-pagination {
+        display: none;
+    }
 }
 
 
@@ -253,6 +310,11 @@
         width: 340px !important;
         height: 340px !important;
     }
+
+    .flat-tabs .menu-tab li {
+        min-width: 100px;
+    }
+    
     .describe_chart {
         margin-bottom: 30px;
         width: 100%;

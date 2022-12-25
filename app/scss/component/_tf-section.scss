@@ -25,6 +25,18 @@
         img {
             object-fit: cover;
             height: 100%;
+            width: 100%;
+        }
+    }
+    &.tf_CTA {
+        .overlay { 
+            background: url('./../../assets/images/backgroup/CTA.png'),center,center, no-repeat;
+            background-size: cover;
+            mix-blend-mode: luminosity;
+            opacity: 0.7;
+        }  
+        .image_cta {
+            margin-top: -74px;
         }
     }
 }
@@ -90,4 +102,218 @@
             padding-top: 50px;
         }
     }
+}
+
+.home2 {
+    .tf-section { 
+        &.partner {
+            height: 120px;
+            background-color: #121A24;
+            @include flex(center,center);
+            padding-bottom: 0;
+            .partner-wrapper { 
+                padding: 0 9px;
+                .image {
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &.partner_CTA {
+            padding: 28px 0;
+            .tf-button {
+                height: 60px;
+                font-size: 16px;
+            }
+        }
+        &.FAQs {
+            padding: 100px 0;
+        }
+        &.tier_system {
+            padding-bottom: 168px;
+        }
+        &.technology {
+            padding-bottom: 56px;
+        }
+        &.roadmap {
+            padding-bottom: 58px;
+        }
+        &.tf_team {
+            padding-bottom: 80px;
+        }
+    }
+
+    .partner_CTA {
+        .overlay {
+            img {
+                mix-blend-mode: luminosity;
+                opacity: 0.2;
+                width: 100%;
+
+            }
+        }
+        .image {
+            position: relative;
+            margin-bottom: -50px;
+            img {
+                transform: rotate(31.83deg);
+                animation: move5 5s infinite linear;
+                -webkit-animation: move5 5s infinite linear;
+            }
+            .icon {
+                position: absolute;
+                &.icon_1 {
+                    left: 0;
+                    top: 5%;
+                    animation: move2 5s infinite linear;
+                    -webkit-animation: move2 5s infinite linear;
+                }
+                &.icon_2 {
+                    left: -60%;
+                    bottom: 30%;
+                    animation: move3 5s infinite linear;
+                    -webkit-animation: move3 5s infinite linear;
+                }
+                &.icon_3 {
+                    right: 0;
+                    bottom: 10%;
+                    animation: move4 5s infinite linear;
+                    -webkit-animation: move4 5s infinite linear;
+                }
+            }
+        }
+    }
+}
+
+.home3 {
+    .features {
+        .overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(9, 18, 29, 0) 10.64%, #09121D 100%), url('./../../assets/images/backgroup/bg_features_h3.png');
+            mix-blend-mode: luminosity;
+            opacity: 0.14;
+            background-repeat: no-repeat;
+            background-position: center, center;
+            background-size: cover;
+        }
+    }
+    .tf_CTA_2 {
+        padding: 0;
+        .overlay {
+            height: 70%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            background: linear-gradient(180deg, rgba(9, 18, 29, 0) 10.64%, #09121D 100%), url('./../../assets/images/backgroup/cta_2.jpg');
+            mix-blend-mode: luminosity;
+            opacity: 0.2;
+            background-repeat: no-repeat;
+            background-position: center, center;
+            background-size: cover;
+        }
+        .image_cta {
+            position: relative;
+            margin-left: -100px;
+            .icon {
+                position: absolute;
+                &.icon_1 {
+                    top: 0px;
+                    left: -30px;
+                    transform: rotate(-22.59deg); 
+                }
+                &.icon_2 {
+                    top: 35%;
+                    transform: rotate(200deg);
+                    right: -50px; 
+                }
+            }
+        }
+        .tf-title {
+            padding: 100px 0;
+        }
+    }
+    .project_2 {
+        .overlay {
+            height: 1172px;
+            position: absolute;
+            left: 0;
+            top: 180px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #09121D 0%, rgba(9, 18, 29, 0) 55.73%, #09121D 100%), url(./../../assets/images/backgroup/bg_home3.png);
+            mix-blend-mode: luminosity;
+            opacity: 0.35;
+            background-repeat: no-repeat;
+            background-position: center, center;
+            background-size: cover;
+        }
+    }
+    .tf_partner {
+        .overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url('./../../assets/images/backgroup/bg_partner.png');
+            mix-blend-mode: luminosity;
+            opacity: 0.2;
+            background-repeat: no-repeat;
+            background-position: center, center;
+            background-size: cover;
+        }
+    }
+    .FAQs {
+        .overlay {
+            position: absolute;
+            left: 0;
+            top: 220px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #09121D 0%, rgba(9, 18, 29, 0) 100%), url('./../../assets/images/backgroup/bg_faq.png');
+            mix-blend-mode: luminosity;
+            opacity: 0.12;
+            background-repeat: no-repeat;
+            background-position: center, center;
+            background-size: cover;
+        }
+    }
+    
+    .tf-section {
+        &.tf_partner {
+            padding: 130px 0 100px;
+        }
+        &.FAQs {
+            padding: 130px 0 130px;
+        } 
+        &.supported {
+            padding-bottom: 0;
+        }
+        &.tf_CTA {
+            padding-top: 100px;
+            .overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url('./../../assets/images/backgroup/CTA_1.png');
+                mix-blend-mode: luminosity;
+                opacity: 0.8;
+                background-repeat: no-repeat;
+                background-position: center, center;
+                background-size: cover;
+            }
+            .image_cta {
+            }
+        }
+    }
+
 }

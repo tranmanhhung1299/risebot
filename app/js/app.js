@@ -1,23 +1,20 @@
 /**
+  * retinaLogos
   * headerFixed
   * mobileNav
-  * eventLoad
   * ajaxContactForm
   * alertBox
+  * swiper_tab
+  * swiper_tab2
+  * swiper_tab3
   * tabs
-  * tabs2
   * goTop
-  * AOS
-  * flatAccordion
+  * flatAccordions
   * flatAccordions2
-  * popupVideo
-  * dropdown
-  * no_link
+  * dropdown 
   * flatCounter
   * ButtonSlide
-  * parallax
-  * loadmore
-  * Preloader
+  * Preloader  
 */
 
 ; (function ($) {
@@ -472,26 +469,6 @@
         });
     };
 
-    var donatProgress = function () {
-        $(".content-progress-box").appear(function () {
-            $('.progress-bar').each(function() {
-                $(this).find('.progress-content').animate({
-                  width:$(this).attr('data-percentage')
-                },3000);
-        
-                $(this).find('.progress-number-mark').animate(
-                  {left:$(this).attr('data-percentage')},
-                  {
-                    duration: 3000,
-                    step: function(num, fx) {
-                        let data = Math.round(num * 100) / 100 ;
-                        $(this).find('.percent').html(data + '%');
-                    }
-                });  
-              });
-        });
-    };
-
 
     var goTop = function() {
         $(window).scroll(function() {
@@ -506,19 +483,8 @@
             $("html, body").animate({ scrollTop: 0 }, 200, 'easeInOutExpo');
             return false;
         });
-    };
+    }; 
 
-    var popupVideo = function () {
-        if ($().magnificPopup) {
-          $(".popup-youtube").magnificPopup({
-            type: "iframe",
-            mainClass: "mfp-fade",
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false,
-          });
-        }
-      };
       var dropdown = function(id){
         var obj = $(id+'.dropdown');
         var btn = obj.find('.btn-selector');
@@ -531,32 +497,7 @@
                 $(this).toggleClass("active");
                 btn.text(txt);
             });
-    };
-    var no_link = function(){
-        $('a.nolink').on('click', function(e){
-          e.preventDefault();
-      });
-    }
-
-
-        var loadmore = function () {
-        $(".fl-item").slice(0, 16).show();
-
-        $(".loadmore").on("click", function(e){
-          e.preventDefault();
-
-          $(".fl-item:hidden").slice(0, 8).slideDown();
-          if($(".fl-item:hidden").length == 0) {
-            $(".loadmore").hide();
-          }
-        });
-    };
-
-    var parallax = function () {
-        if ($().parallax && isMobile.any() == null) {
-          $(".parallax").parallax("50%", 0.2);
-        }
-      };
+    }; 
 
       var flatAccordions2 = function() {
         var args = {easing:'easeOutExpo', duration:400};
@@ -574,40 +515,13 @@
         });
     };
 
-    var Preloader = function () {
-        setTimeout(function () {
-        $(".preload").fadeOut("slow", function () {
-            $(this).remove();
-        });
-        }, 800);
-    };
+    function Preloader() {
+        if ($(".preloader").length) {
+            $("body").addClass("page-loaded");
+            $(".preloader").delay(1000).fadeOut(0);
+        }
+    } 
 
-    // var flatCounter = function () {
-    //     if ($(document.body).hasClass("counter-scroll")) {
-    //       var a = 0;
-    //       $(window).scroll(function () {
-    //         var oTop = $(".counter").offset().top - window.innerHeight;
-    //         if (a == 0 && $(window).scrollTop() > oTop) {
-    //           if ($().countTo) {
-    //             $(".counter")
-    //               .find(".count-number")
-    //               .each(function () {
-    //                 var to = $(this).data("to"),
-    //                   speed = $(this).data("speed"),
-    //                   formatter = $(this).data('formatter');
-    //                 $(this).countTo({
-    //                   to: to,
-    //                   speed: speed,
-    //                   formatter: formatter,
-    //                 });
-    //               });
-    //           }
-    //           a = 1;
-    //         }
-    //       });
-    //     }
-    // };
-  
     var flatCounter = function () {
         if ($(document.body).hasClass("counter-scroll")) {
           var a = 0;
@@ -634,7 +548,6 @@
         }
     };
 
-
     // Dom Ready
     $(function () {
         retinaLogos();
@@ -650,18 +563,10 @@
         goTop();
         AOS.init();
         flatAccordion();
-        flatAccordions2();
-        popupVideo();
+        flatAccordions2(); 
         dropdown('#artworks');
-        dropdown('#category');
-        no_link();
-        flatCounter();
-
-        $(window).on("load resize", function () {
-            parallax();
-        });
-        donatProgress();
-        loadmore();
+        dropdown('#category'); 
+        flatCounter(); 
         Preloader();
     });
 

@@ -1,5 +1,7 @@
 @use '../abstracts/' as *;
 
+/* tab
+-------------------------------------------------------------- */
 .flat-tabs {
     .menu-tab {
         @include flex(center,center);
@@ -33,8 +35,45 @@
         }
     }
     .content-tab {
-        margin-top: 50px;
-        .content-inner {
+        margin-top: 50px; 
+        &.mt40 {
+            margin-top: 40px;
         }
     }
+
+    .wrapper_menutab {
+        @include flex(center,space-between); 
+        background: $bg-2 ;
+        border-radius: 8px;
+        padding: 8px;
+        .menu-tab {
+            @include flex(center,center);
+            li {
+                @include transition3;
+                @include flex(center, center);
+                position: relative;
+                height: 60px;
+                margin: 0 12px 0 0; 
+                padding: 5px 48px;
+                span {
+                    @include transition3;
+                    color: $txt-color;
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: bold;
+                    font-family: 'resobot-bold';
+                    text-transform: capitalize;
+                } 
+                &.active,
+                &:hover {
+                    span {
+                        color: $color-st2 ;
+                    }
+                }
+            }
+        } 
+    }
 }
+
+
+ 

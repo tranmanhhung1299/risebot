@@ -1,4 +1,7 @@
 @use '../abstracts/' as *;
+
+/* footer
+-------------------------------------------------------------- */
 #footer {
     .social {
         li {
@@ -12,7 +15,7 @@
         }
     }
     .footer-main {
-        padding: 100px 0 36px;
+        padding: 60px 0 36px;
         .footer-logo,
         .widget {
             padding: 0 15px;

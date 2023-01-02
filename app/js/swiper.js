@@ -237,22 +237,55 @@ var swiper =  new Swiper(".slider-11", {
 var swiper =  new Swiper(".slider-12", {
     slidesPerView: 1,
     loop: false, 
-    spaceBetween: 30, 
+    spaceBetween: 30,
+    breakpoints: {
+        440: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        560: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        }, 
+        750: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },  
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1280: {
+            slidesPerView: 9,
+            spaceBetween: 30,
+        },
+    },
+});
+
+var swiper =  new Swiper(".slider-13", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".next_slider-13",
+        prevEl: ".prev_slider-13",
+    },
     breakpoints: {
         0: {
             slidesPerView: 1,
             spaceBetween: 30,
         },
-        750: {
+        600: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
         991: {
-            slidesPerView: 5,
+            slidesPerView: 3,
             spaceBetween: 30,
         },
         1280: {
-            slidesPerView: 9,
+            slidesPerView: 6,
             spaceBetween: 30,
         },
     },

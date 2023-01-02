@@ -1,4 +1,7 @@
 @use '../abstracts/' as *;
+
+/* tf-section
+-------------------------------------------------------------- */
 .page-title {
     padding: 146px 0 59px;
     position: relative;
@@ -76,12 +79,15 @@
 }
 
 .home1 {
+    #footer .footer-main {
+        padding: 102px 0 36px;
+    }
     .tf-section {
         &.project {
             padding-bottom: 95px;
         }
         &.project_2 {
-            padding-bottom: 98px;
+            padding-bottom: 101px;
         }
         &.project_3 {
             padding-bottom: 115px;
@@ -90,7 +96,7 @@
             padding-bottom: 80px;
         }
         &.tf_partner {
-            padding-bottom: 95px;
+            padding-bottom: 168px;
         }
         &.tf_CTA {
             padding-bottom: 0;
@@ -127,8 +133,11 @@
                 font-size: 16px;
             }
         }
+        &.tf_CTA {
+            padding-bottom: 40px;
+        }
         &.FAQs {
-            padding: 100px 0;
+            padding: 100px 0 175px;
         }
         &.tier_system {
             padding-bottom: 168px;
@@ -157,9 +166,7 @@
             position: relative;
             margin-bottom: -50px;
             img {
-                transform: rotate(31.83deg);
-                animation: move5 5s infinite linear;
-                -webkit-animation: move5 5s infinite linear;
+                transform: rotate(31.83deg); 
             }
             .icon {
                 position: absolute;
@@ -225,18 +232,24 @@
                 position: absolute;
                 &.icon_1 {
                     top: 0px;
-                    left: -30px;
+                    left: 0;
                     transform: rotate(-22.59deg); 
                 }
                 &.icon_2 {
-                    top: 35%;
+                    top: 30%;
                     transform: rotate(200deg);
-                    right: -50px; 
+                    right: -115px;
                 }
+            }
+            .move4 {
+                margin-left: -62px;
             }
         }
         .tf-title {
-            padding: 100px 0;
+            padding: 105px 0;
+            .sub {
+                margin-bottom: 20px;
+            }
         }
     }
     .project_2 {
@@ -297,7 +310,8 @@
             padding-bottom: 0;
         }
         &.tf_CTA {
-            padding-top: 100px;
+            padding: 196px 0 71px;
+
             .overlay {
                 position: absolute;
                 left: 0;
@@ -310,10 +324,237 @@
                 background-repeat: no-repeat;
                 background-position: center, center;
                 background-size: cover;
-            }
-            .image_cta {
-            }
+            } 
+        }
+        &.project_2 {
+            padding: 94px 0 130px; 
+        }
+        &.project {
+            padding-top: 135px;
+            padding-bottom: 0;
+        }
+        &.features {
+            padding-top: 130px;
+            padding-bottom: 72px;
+        }
+        &.three_step {
+            padding-bottom: 130px;
         }
     }
 
+}
+
+.project-list {
+    .tf-section { 
+        &.project {
+            padding: 60px 0 135px;
+        } 
+    }
+} 
+
+.project-page {
+    .tf-section {  
+        &.tf_CTA {
+            padding-bottom: 0;
+        } 
+    }
+    .project-wrapper {
+        width: 100%;
+        .content-wrapper {
+            margin-top: 0;
+        }
+    }
+    .project-box-style3 .content .td6 {
+        display: block;
+        .progress-bar {
+            position: relative;
+            padding: 4px 0;
+            padding-right: 70px;
+            .progress-title-holder {
+                position: absolute;
+                top: 0;
+                right: 26px;
+                span.percent  {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+    
+.project-grid {
+    .tf-section { 
+        &.project {
+            padding: 60px 0 125px;
+        }  
+        &.project_1 {
+            padding: 60px 0 30px;
+        }
+    }
+}
+
+.project-grid-5 {
+    .tf-section {
+        &.project_1 {
+            padding: 60px 0; 
+        }
+        &.project_2 {
+            padding-bottom: 125px;
+            .project-box-style3 .content {
+                .td1 {
+                    width: 17%;
+                }
+                .td2 {
+                    width: 13%;
+                }
+                .td3 {
+                    width: 14%;
+                    padding-left: 32px;
+                }
+                .td4 {
+                    width: 13%;
+                    padding-left: 27px;
+                }
+                .td5 {
+                    width: 13%;
+                    display: block;
+                    padding-left: 20px;
+                }
+                .td6 {
+                    width: 30%;
+                    padding-left: 56px;
+                    display: block;
+                    .content-progress-box.style2 .progress-number-wrapper {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project-grid-5.project-page {
+    .tf-section {
+        &.details {
+            padding: 60px 0 133px;
+        } 
+        &.project_2 {
+            padding-bottom: 0;
+        }
+    }
+    &.project-page .tf-section.tf_CTA {
+        padding-bottom: 60px;
+    }
+}
+
+.page-roadmap {
+    .tf-section {
+        &.roadmap {
+            padding: 60px 0 138px;
+
+        }
+    }
+}
+
+.inner-page {
+    .tf-section.tf_CTA {
+        padding-bottom: 0;
+    }
+}
+
+
+.tf-faq {
+    .form-seach {
+        width: 100%;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.faq-page {
+    .tf-section.questions {
+        padding: 102px 0;
+        display: block;
+        background: url(./../../assets/images/backgroup/bg_question.png) center center no-repeat; 
+        mix-blend-mode: luminosity;
+    }
+    .tf-section {
+        &.tf-faq {
+            padding: 60px 0 24px;
+        }
+        &.tf-faq_2 {
+            padding-bottom: 40px;
+        }
+        &.FAQs {
+            padding-bottom: 58px;
+        }
+    }
+    &.inner-page .tf-section.tf_CTA {
+        padding: 121px 0 0;
+    }
+}
+
+.project-info {
+    .wrap-btn {
+        justify-content: center;
+        margin-top: 32px;
+        .tf-button {
+            font-size: 16px;
+            height: 60px;
+        }
+    }
+}
+
+.home2.inner-page .tf-section.FAQs {
+    padding: 60px 0 126px;
+}
+
+.inner-page.team-page {
+    .tf-section.tf_CTA {
+        padding-top: 24px;
+    }
+}
+
+.contact-page {
+    .tf-section {
+        &.tf-contact {
+            padding-bottom: 0;
+        }
+        &.project-info {
+            padding: 39px 0 124px;
+        }
+    }
+    .project-info-form {
+        .title {
+            margin-bottom: 23px;
+        } 
+    }
+    .project-info .wrap-btn .tf-button {
+        font-size: 14px;
+        height: 52px;
+    }
+}
+.blog-grid {
+    .tf-section.tf-blog {
+        padding-bottom: 133px;
+    }
+}
+
+.blog-list {
+    .tf-section.tf-blog {
+        padding-bottom: 135px;
+    }
+}
+
+.token-page {
+    .tf-section.tf-token {
+        padding-bottom: 133px;
+    }
+}
+
+.wallet-page {
+    .page-title {
+        min-height: 335px;
+    }
 }

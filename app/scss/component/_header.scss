@@ -1,5 +1,7 @@
 @use '../abstracts/' as *;
 
+/* header
+-------------------------------------------------------------- */
 .header.main {
     background: transparent;
 }
@@ -28,13 +30,7 @@
         transform: translateY(-50%);
         padding-left: 10px;
     }
-}
-
-.inner-page {
-    .header {
-        background-color: $bg-3;
-    }
-}
+} 
 
 #main-nav .menu {
     @include flex(center, flex-start);

@@ -1,5 +1,7 @@
 @use '../abstracts/' as *;
 
+/* menu
+-------------------------------------------------------------- */
 #main-nav-mobi {
     @include translateY0;
     display: block ;

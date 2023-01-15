@@ -315,7 +315,7 @@
             <div class="container">
                 <div class="wrap-fx">
                     <div class="Copyright">
-                        Copyright © 2022. Designed by <a href="https://themeforest.net/user/themesflat/portfolio">Themesflat</a>
+                        Copyright © 2023. Designed by <a href="https://themeforest.net/user/themesflat/portfolio">Themesflat</a>
                     </div>
                     <ul class="social">
                         <li>
@@ -480,56 +480,6 @@
 
      <script src="app/js/jquery.easing.js"></script>
      <script src="app/js/plugin.js"></script>
-     <script src="app/js/count-down.js"></script> 
-     <script src="app/js/apexcharts.min.js"></script>
-     <script>
-        var height;
-        if ($(window).width() < 1200) {
-            height = 400
-        }
-        else {
-            height = 550
-        }
-    var options = {
-            series: [27.3, 15.3, 7.5, 7.03, 23.45, 13.3, 7.3, 5.3],
-            chart: {
-            height: height,
-            type: 'radialBar',
-            },
-            plotOptions: {
-            radialBar: {
-                hollow: {
-                    margin: 10,
-                    size: '10%',
-                    background: 'transparent',
-                    image: undefined,
-                },
-                dataLabels: {
-                name: {
-                    fontSize: '22px',
-                },
-                value: {
-                    fontSize: '16px',
-                },
-                total: {
-                    show: false,
-                    label: 'Total', 
-                }
-                }
-            }
-            },  
-            colors: ['#AFC5FF', '#FDEBB3', '#ACF2C4', '#CDBDF3', '#FB907F', "#6574EB", "#ACE5F2", "#CADB79"],
-            labels: ['Farming Pool', 'Staking', 'Ecosystem', 'Advisor','Private Sale', 'Liquidity', 'Marketing', 'Team'],
-            tooltip: { 
-                style: {
-                    fontSize: '12px',
-                    fontFamily: undefined
-                }
-            } 
-            }; 
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-
-    </script> 
+     <script src="app/js/count-down.js"></script>  
 </body>
 </html>

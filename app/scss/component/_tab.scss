@@ -27,6 +27,7 @@
             &.active,
             &:hover {
                 background: $color-hover;
+                cursor: pointer;
                 span{
                     color: #09121D;
                 }

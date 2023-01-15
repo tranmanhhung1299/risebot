@@ -11,15 +11,19 @@
         width: 112px;
         margin: 0 auto;
         z-index: 99;
+        background: url('./../../assets/images/common/project_1.png') center center no-repeat;
         img {
-            &.mask {
+            &.mask { 
+                width: 112px;
                 height: 112px;
-                -webkit-mask-image: url(/assets/images/common/project_1.png);
-                mask-image: url(/assets/images/common/project_1.png);
+                -webkit-mask-image: url('./../../assets/images/common/project_1.png');
+                mask-image: url('./../../assets/images/common/project_1.png');  
                 -webkit-mask-position: center center;
                 mask-position: center center;
                 -webkit-mask-repeat: no-repeat;
                 mask-repeat: no-repeat;
+                text-align: center;
+                overflow: hidden;
             }
 
         }
@@ -111,7 +115,7 @@
                     height: 40px;
                     width: 100%;
                     max-width: 230px;
-                    background: url(/assets/images/common/bg_text.png);
+                    background: url('./../../assets/images/common/bg_text.png');
                     background-position: center right;
                     background-repeat: no-repeat;
                     margin-bottom: 0;
@@ -122,7 +126,7 @@
                     padding: 8px 10px;
                     height: 40px;
                     width: 90px;
-                    background: url(/assets/images/common/bg_text2.png);
+                    background: url('./../../assets/images/common/bg_text2.png');
                     background-position: center left;
                     background-repeat: no-repeat;
                     color: $black;
@@ -229,11 +233,12 @@
         position: relative;
         .img_inner {
             position: relative;
+            background: url('./../../assets/images/common/project_56.png') center center no-repeat;
         }
         img {
             height: 112px;
-            -webkit-mask-image: url(/assets/images/common/project_56.png);
-            mask-image: url(/assets/images/common/project_56.png);
+            -webkit-mask-image: url('./../../assets/images/common/project_56.png');
+            mask-image: url('./../../assets/images/common/project_56.png');
             -webkit-mask-position: center center;
             mask-position: center center;
             -webkit-mask-repeat: no-repeat;
@@ -292,7 +297,7 @@
                     height: 40px;
                     width: 100%;
                     max-width: 250px;
-                    background: url(/assets/images/common/bg_text_4.png);
+                    background: url('./../../assets/images/common/bg_text_4.png');
                     background-position: center right;
                     background-repeat: no-repeat;
                     margin-bottom: 0;
@@ -305,7 +310,7 @@
                     max-width: 120px;
                     width: 100%;
                     // min-height: 120px;
-                    background: url(/assets/images/common/bg_text4.png);
+                    background: url('./../../assets/images/common/bg_text4.png');
                     background-position: center left;
                     background-repeat: no-repeat;
                     color: $black;
@@ -373,11 +378,12 @@
         width: 112px;
         min-width: 112px;
         margin-right: 16px;
+        background: url('./../../assets/images/common/project_1.png') center center no-repeat;
         img {
             &.mask {
                 height: 112px;
-                -webkit-mask-image: url(/assets/images/common/project_1.png);
-                mask-image: url(/assets/images/common/project_1.png);
+                -webkit-mask-image: url('./../../assets/images/common/project_1.png');
+                mask-image: url('./../../assets/images/common/project_1.png');
                 -webkit-mask-position: center center;
                 mask-position: center center;
                 -webkit-mask-repeat: no-repeat;
@@ -439,7 +445,7 @@
                     height: 40px;
                     width: 100%;
                     max-width: 320px;
-                    background: url(/assets/images/common/bg_text_2.png);
+                    background: url('./../../assets/images/common/bg_text_2.png');
                     background-position: center right;
                     background-repeat: no-repeat;
                     margin-bottom: 0;
@@ -450,7 +456,7 @@
                     padding: 8px 10px;
                     height: 40px;
                     width: 180px;
-                    background: url(/assets/images/common/bg_text3.png);
+                    background: url('./../../assets/images/common/bg_text3.png');
                     background-position: center left;
                     background-repeat: no-repeat;
                     color: $black;
@@ -476,7 +482,7 @@
             @include flex(center,center);
             width: 100px;
             height: 110px;
-            background: url(/assets/images/backgroup/bg_counter.png) center center no-repeat;
+            background: url('./../../assets/images/backgroup/bg_counter.png') center center no-repeat;
             background-size: contain;
             box-shadow: 0px 6px 10px 0px #00000024;
             margin-right: 26px;
@@ -547,11 +553,12 @@
             height: 90px;
             width: 90px;
             z-index: 9;
+            background: url('./../../assets/images/common/project_8.png') center center no-repeat;
             img {
                 &.mask {
                     height: 90px;
-                    -webkit-mask-image: url(/assets/images/common/project_8.png);
-                    mask-image: url(/assets/images/common/project_8.png);
+                    -webkit-mask-image: url('./../../assets/images/common/project_8.png');
+                    mask-image: url('./../../assets/images/common/project_8.png');
                     -webkit-mask-position: center center;
                     mask-position: center center;
                     -webkit-mask-repeat: no-repeat;
@@ -683,7 +690,7 @@
     }
     .image {
         z-index: 999;
-        background: url(/assets/images/backgroup/bg_img_team.png) center center no-repeat;
+        background: url('./../../assets/images/backgroup/bg_img_team.png') center center no-repeat;
         width: 156px;
         height: 176px;
         margin: 0 auto;
@@ -691,8 +698,8 @@
         img {
             width: 156px;
             height: 176px;
-            -webkit-mask-image: url(/assets/images/backgroup/bg_img_team.png);
-            mask-image: url(/assets/images/backgroup/bg_img_team.png);
+            -webkit-mask-image: url('./../../assets/images/backgroup/bg_img_team.png');
+            mask-image: url('./../../assets/images/backgroup/bg_img_team.png');
             -webkit-mask-position: center center;
             mask-position: center center;
             -webkit-mask-repeat: no-repeat;
@@ -707,12 +714,12 @@
         margin-top: -102px;
         border-radius: 20px;
         position: relative;
-        -webkit-mask-image: url(/assets/images/backgroup/bg_team.png);
-        mask-image: url(/assets/images/backgroup/bg_team.png);
+        -webkit-mask-image: url('./../../assets/images/backgroup/bg_team.png');
+        mask-image: url('./../../assets/images/backgroup/bg_team.png');
         -webkit-mask-position: center center;
         mask-position: center center;
         -webkit-mask-repeat: no-repeat;
-        background: url(/assets/images/backgroup/bg_team.png);
+        background: url('./../../assets/images/backgroup/bg_team.png');
         background-position: center,center;
         background-size: cover;
         z-index: 99; 
@@ -765,12 +772,12 @@
             margin-left: 30px;
             height: 70px;
             position: relative;
-            -webkit-mask-image: url(/assets/images/backgroup/bg_partner_2.png);
-            mask-image: url(/assets/images/backgroup/bg_partner_2.png);
+            -webkit-mask-image: url('./../../assets/images/backgroup/bg_partner_2.png');
+            mask-image: url('./../../assets/images/backgroup/bg_partner_2.png');
             -webkit-mask-position: center center;
             mask-position: center center;
             -webkit-mask-repeat: no-repeat;
-            background: url(/assets/images/backgroup/bg_partner_2.png);
+            background: url('./../../assets/images/backgroup/bg_partner_2.png');
             background-position: center,center;
             background-size: cover;
             @include flex(center,center);
@@ -791,13 +798,13 @@
     margin: 0 auto;
     .top {
         text-align: center;
-        -webkit-mask-image: url(/assets/images/backgroup/bg_box_1.png);
-        mask-image: url(/assets/images/backgroup/bg_box_1.png);
+        -webkit-mask-image: url('./../../assets/images/backgroup/bg_box_1.png');
+        mask-image: url('./../../assets/images/backgroup/bg_box_1.png');
         -webkit-mask-position: center center;
         mask-position: center center;
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
-        background: url(/assets/images/backgroup/bg_box_1.png);
+        background: url('./../../assets/images/backgroup/bg_box_1.png');
         background-position: center, center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -854,7 +861,7 @@
         @include flex(center,center);
         width: 46px;
         height: 41px;
-        background: url(/assets/images/backgroup/bg_num_box1.png) center center no-repeat;
+        background: url('./../../assets/images/backgroup/bg_num_box1.png') center center no-repeat;
         background-size: contain;
         left: 50%;
         transform: translateX(-50%);
@@ -970,6 +977,8 @@
     padding-top: 71px;
     .date {
         font-size: 17px;
+        font-family: $font-body;
+
     }
     ul {
         li {
@@ -1088,11 +1097,12 @@
                 width: 90px;
                 min-width: 90px;
                 margin-right: 20px;
+                background: url('./../../assets/images/common/project_24.png') center center no-repeat;
                 img {
                     &.mask {
                         height: 90px;
-                        -webkit-mask-image: url(/assets/images/common/project_24.png);
-                        mask-image: url(/assets/images/common/project_24.png);
+                        -webkit-mask-image: url('./../../assets/images/common/project_24.png');
+                        mask-image: url('./../../assets/images/common/project_24.png');
                         -webkit-mask-position: center center;
                         mask-position: center center;
                         -webkit-mask-repeat: no-repeat;
@@ -1181,8 +1191,7 @@
             }
         }
     }
-}
-
+} 
 .project-box-style7 {
     position: relative;
     overflow: hidden;
@@ -1258,8 +1267,7 @@
         width: 100%;
         .progress-number-mark {
             @include flex(center, flex-end);
-            left: auto !important;
-            padding-right: 26px;
+            padding-right: 35px;
             span {
                 width: auto;
                 &.percent {
@@ -1337,15 +1345,15 @@
         width: 125px;
         min-width: 125px;
         height: 140px;
-        -webkit-mask-image: url(/assets/images/backgroup/bg_icon_box.png);
-        mask-image: url(/assets/images/backgroup/bg_icon_box.png);
+        -webkit-mask-image: url('./../../assets/images/backgroup/bg_icon_box.png');
+        mask-image: url('./../../assets/images/backgroup/bg_icon_box.png');
         -webkit-mask-position: center center;
         mask-position: center center;
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
         overflow: hidden;
         @include flex(center,center);  
-        background: url(/assets/images/backgroup/bg_icon_box.png) center center no-repeat;
+        background: url('./../../assets/images/backgroup/bg_icon_box.png') center center no-repeat;
         background-size: contain;
         img {
             transform: scale(1);
@@ -1565,14 +1573,21 @@
         height: 90px;
         width: 90px;
         min-width: 90px; 
+        background: url('./../../assets/images/common/project_24.png') center center no-repeat;
         img {
-            height: 90px;
-            -webkit-mask-image: url(/assets/images/common/project_24.png);
-            mask-image: url(/assets/images/common/project_24.png);
-            -webkit-mask-position: center center;
-            mask-position: center center;
-            -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
+            &.mask {
+                height: 90px;
+                -webkit-mask-image: url('./../../assets/images/common/project_24.png');
+                mask-image: url('./../../assets/images/common/project_24.png');
+                -webkit-mask-position: center center;
+                mask-position: center center;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+            } 
+        }
+        .shape {
+            width: 24px;
+            height: 24px;
         }
     }
     .content {
@@ -1662,13 +1677,13 @@
         position: relative;
         overflow: hidden;
         margin-right: 30px;
-        background: url(/assets/images/backgroup/bg_img_team_2.png) center center no-repeat;
+        background: url('./../../assets/images/backgroup/bg_img_team_2.png') center center no-repeat;
         img {
             z-index: 999;
             width: 102px;
             height: 116px;
-            -webkit-mask-image: url(/assets/images/backgroup/bg_img_team_2.png);
-            mask-image: url(/assets/images/backgroup/bg_img_team_2.png);
+            -webkit-mask-image: url('./../../assets/images/backgroup/bg_img_team_2.png');
+            mask-image: url('./../../assets/images/backgroup/bg_img_team_2.png');
             -webkit-mask-position: center center;
             mask-position: center center;
             -webkit-mask-repeat: no-repeat;

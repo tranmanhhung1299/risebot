@@ -318,6 +318,9 @@
             }
         }
     }
+    &.bottom_0 {
+        bottom: 0;
+    }
 }
 
 .slider-1 {
@@ -336,7 +339,7 @@
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    background: url(/assets/images/common/bg_arrow.png) center center no-repeat;
+    background: url('./../../assets/images/common/bg_arrow.png') center center no-repeat;
     background-size: cover;
     &.swiper-button-disabled {
         opacity: 0.3;

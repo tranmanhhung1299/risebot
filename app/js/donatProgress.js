@@ -14,7 +14,7 @@
                     {
                         duration: 3000,
                         step: function(num, fx) {
-                            let data = Math.round(num * 100) / 100 ;
+                            let data = Math.round(num * 10) / 10 ;
                             $(this).find('.percent').html(data + '%');
                         }
                     });  

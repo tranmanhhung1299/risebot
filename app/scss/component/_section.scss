@@ -129,7 +129,7 @@
             top: 0;
             left: 0;
 
-            background: linear-gradient(180deg, #09121D 3.92%, rgba(9, 18, 29, 0) 36.79%, #09121D 83.98%), url(./../../assets/images/backgroup/bg_pagetitle.png), center,center,no-repeat;
+            background: linear-gradient(180deg, #09121D 3.92%, rgba(9, 18, 29, 0) 36.79%, #09121D 83.98%), url('./../../assets/images/backgroup/bg_pagetitle.png'), center,center,no-repeat;
             mix-blend-mode: luminosity;
             background-position: center,center;
             background-repeat: no-repeat;
@@ -591,7 +591,7 @@
 	width: 55px;
 	height: 62px;
 	position: relative;
-    background: url(./../../assets/images/backgroup/bg_countdown.png) center center no-repeat;
+    background: url('./../../assets/images/backgroup/bg_countdown.png') center center no-repeat;
     background-size: cover;
     color: $white;
     font-size: 24px;
@@ -803,7 +803,7 @@
         margin-bottom: 20px;
         .image {
             z-index: 999;
-            background: url(/assets/images/backgroup/bg_img_team_3.png) center center no-repeat;
+            background: url('./../../assets/images/backgroup/bg_img_team_3.png') center center no-repeat;
             width: 76px;
             height: 86px;
             margin: 0 auto;
@@ -812,8 +812,8 @@
             img {
                 width: 76px;
                 height: 86px;
-                -webkit-mask-image: url(/assets/images/backgroup/bg_img_team_3.png);
-                mask-image: url(/assets/images/backgroup/bg_img_team_3.png);
+                -webkit-mask-image: url('./../../assets/images/backgroup/bg_img_team_3.png');
+                mask-image: url('./../../assets/images/backgroup/bg_img_team_3.png');
                 -webkit-mask-position: center center;
                 mask-position: center center;
                 -webkit-mask-repeat: no-repeat;
@@ -970,7 +970,7 @@
     }
     .image {
         z-index: 999;
-        background: url(/assets/images/backgroup/bg_img_team_4.png) center center no-repeat;
+        background: url('./../../assets/images/backgroup/bg_img_team_4.png') center center no-repeat;
         width: 194px;
         height: 220px;
         min-width: 194px;  
@@ -979,8 +979,8 @@
         img {
             width: 194px;
             height: 220px;
-            -webkit-mask-image: url(/assets/images/backgroup/bg_img_team_4.png);
-            mask-image: url(/assets/images/backgroup/bg_img_team_4.png);
+            -webkit-mask-image: url('./../../assets/images/backgroup/bg_img_team_4.png');
+            mask-image: url('./../../assets/images/backgroup/bg_img_team_4.png');
             -webkit-mask-position: center center;
             mask-position: center center;
             -webkit-mask-repeat: no-repeat;
@@ -1830,7 +1830,7 @@
 
 .project-info-form {
     &.form-login {
-        background-image: url(/assets/images/backgroup/bg_login.png);
+        background-image: url('./../../assets/images/backgroup/bg_login.png');
         background-color: transparent;  
         border: none;
         position: relative;
@@ -1849,7 +1849,7 @@
             &.link {
                 margin-bottom: 0 !important;
                 height: 57px;
-                background-image: url(/assets/images/backgroup/bg_link_1.png); 
+                background-image: url('./../../assets/images/backgroup/bg_link_1.png'); 
                 background-repeat: no-repeat;
                 @include flex(center,center);
                 position: absolute;
@@ -1878,11 +1878,11 @@
             }
         }
         &.style2 {
-            background-image: url(/assets/images/backgroup/bg_login_2.png);
+            background-image: url('./../../assets/images/backgroup/bg_login_2.png');
             padding: 20px 30px 35px;
             .title { 
                 &.link { 
-                    background-image: url(/assets/images/backgroup/bg_link_2.png); 
+                    background-image: url('./../../assets/images/backgroup/bg_link_2.png'); 
                     background-repeat: no-repeat;
                     @include flex(center,center);
                     position: absolute; 

@@ -16,6 +16,9 @@
 }
 
 @include res1200 {
+    .home3 .tf_CTA_2 .image_cta .move4 {
+        right: 40px;
+    }
     .header .main-nav {
         left: 22%;
     }
@@ -89,11 +92,20 @@
 }
 
 @include res991 {
+    .home2 .tf-section.partner_CTA {
+        padding: 70px 0;
+    }
+    .tf-section.tf_CTA .image_cta {
+        margin-top: 0;
+    }
     .mobile-button {
         display: block;
     }
     .header #site-header-inner .tf-button {
-        margin-right: 35px;
+        margin-right: 40px;
+        height: 45px;
+        padding: 16px 20px;
+        font-size: 12px;
     }
     .tokenomics-wrapper {
         overflow-x: auto;
@@ -215,6 +227,17 @@
 }
 
 @include res767 {
+    .home3 .tf_CTA_2 .image_cta {
+        .move4 {
+            position: relative;
+            left: 50px;
+            right: auto;
+            top: 0;
+        }
+        .icon.icon_1 {
+            left: 100px;
+        }
+    }
     .main .page-title .slider-st2 {
         padding-bottom: 70px;
     }
@@ -227,6 +250,7 @@
             width: 100%;
         }
     }
+
     .login-page .project-info.tf-section {
         padding-bottom: 0 !important;
     }
@@ -372,7 +396,7 @@
     .features .wrapper-box .icon-box-style2 {
         width: calc(50% - 30px);
     }
-
+    .home3 .tf-section.project_2,
     .home3 .tf-section.tf_partner,
     .home3 .tf-section.project {
         padding-top: 70px !important; 
@@ -386,7 +410,6 @@
 
     #footer .footer-main,
     .home3 .tf-section.tf_CTA,
-    .home3 .tf-section.project_2,
     .home3 .tf-section.features {
         padding-top: 0;
     }

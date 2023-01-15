@@ -39,8 +39,10 @@ body {
                 left: 0;
                 top: 0;
                 img {
-                    height: auto;
-                    opacity: 0.2;
+                    height: 100%;
+                    opacity: 0.5;
+                    background: linear-gradient(180deg, #09121D 3.92%, rgba(9, 18, 29, 0) 36.79%, #09121D 83.98%);
+                    mix-blend-mode: luminosity;
                 }
             }
         }

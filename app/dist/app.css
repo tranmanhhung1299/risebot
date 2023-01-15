@@ -37,8 +37,10 @@ body.home2 .bg_body .bg_h2 {
   top: 0;
 }
 body.home2 .bg_body .bg_h2 img {
-  height: auto;
-  opacity: 0.2;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(180deg, #09121D 3.92%, rgba(9, 18, 29, 0) 36.79%, #09121D 83.98%);
+  mix-blend-mode: luminosity;
 }
 
 p {
@@ -995,7 +997,7 @@ form button {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg, #09121D 3.92%, rgba(9, 18, 29, 0) 36.79%, #09121D 83.98%), url(./../../assets/images/backgroup/bg_pagetitle.png), center, center, no-repeat;
+  background: linear-gradient(180deg, #09121D 3.92%, rgba(9, 18, 29, 0) 36.79%, #09121D 83.98%), url("./../../assets/images/backgroup/bg_pagetitle.png"), center, center, no-repeat;
   mix-blend-mode: luminosity;
   background-position: center, center;
   background-repeat: no-repeat;
@@ -1448,7 +1450,7 @@ form button {
   width: 55px;
   height: 62px;
   position: relative;
-  background: url(./../../assets/images/backgroup/bg_countdown.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_countdown.png") center center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 24px;
@@ -1661,7 +1663,7 @@ form button {
 }
 .question-content .image-wrapper .image {
   z-index: 999;
-  background: url(/assets/images/backgroup/bg_img_team_3.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_img_team_3.png") center center no-repeat;
   width: 76px;
   height: 86px;
   margin: 0 auto;
@@ -1671,8 +1673,8 @@ form button {
 .question-content .image-wrapper .image img {
   width: 76px;
   height: 86px;
-  -webkit-mask-image: url(/assets/images/backgroup/bg_img_team_3.png);
-  mask-image: url(/assets/images/backgroup/bg_img_team_3.png);
+  -webkit-mask-image: url("./../../assets/images/backgroup/bg_img_team_3.png");
+  mask-image: url("./../../assets/images/backgroup/bg_img_team_3.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -1817,7 +1819,7 @@ form button {
 }
 .team-details .image {
   z-index: 999;
-  background: url(/assets/images/backgroup/bg_img_team_4.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_img_team_4.png") center center no-repeat;
   width: 194px;
   height: 220px;
   min-width: 194px;
@@ -1827,8 +1829,8 @@ form button {
 .team-details .image img {
   width: 194px;
   height: 220px;
-  -webkit-mask-image: url(/assets/images/backgroup/bg_img_team_4.png);
-  mask-image: url(/assets/images/backgroup/bg_img_team_4.png);
+  -webkit-mask-image: url("./../../assets/images/backgroup/bg_img_team_4.png");
+  mask-image: url("./../../assets/images/backgroup/bg_img_team_4.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -2657,7 +2659,7 @@ form button {
 }
 
 .project-info-form.form-login {
-  background-image: url(/assets/images/backgroup/bg_login.png);
+  background-image: url("./../../assets/images/backgroup/bg_login.png");
   background-color: transparent;
   border: none;
   position: relative;
@@ -2678,7 +2680,7 @@ form button {
 .project-info-form.form-login .title.link {
   margin-bottom: 0 !important;
   height: 57px;
-  background-image: url(/assets/images/backgroup/bg_link_1.png);
+  background-image: url("./../../assets/images/backgroup/bg_link_1.png");
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -2706,11 +2708,11 @@ form button {
   color: #86FF00;
 }
 .project-info-form.form-login.style2 {
-  background-image: url(/assets/images/backgroup/bg_login_2.png);
+  background-image: url("./../../assets/images/backgroup/bg_login_2.png");
   padding: 20px 30px 35px;
 }
 .project-info-form.form-login.style2 .title.link {
-  background-image: url(/assets/images/backgroup/bg_link_2.png);
+  background-image: url("./../../assets/images/backgroup/bg_link_2.png");
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -2959,15 +2961,19 @@ form button {
   width: 112px;
   margin: 0 auto;
   z-index: 99;
+  background: url("./../../assets/images/common/project_1.png") center center no-repeat;
 }
 .project-box .image img.mask {
+  width: 112px;
   height: 112px;
-  -webkit-mask-image: url(/assets/images/common/project_1.png);
-  mask-image: url(/assets/images/common/project_1.png);
+  -webkit-mask-image: url("./../../assets/images/common/project_1.png");
+  mask-image: url("./../../assets/images/common/project_1.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
 }
 .project-box .image .shape {
   position: absolute;
@@ -3061,7 +3067,7 @@ form button {
   height: 40px;
   width: 100%;
   max-width: 230px;
-  background: url(/assets/images/common/bg_text.png);
+  background: url("./../../assets/images/common/bg_text.png");
   background-position: center right;
   background-repeat: no-repeat;
   margin-bottom: 0;
@@ -3074,7 +3080,7 @@ form button {
   padding: 8px 10px;
   height: 40px;
   width: 90px;
-  background: url(/assets/images/common/bg_text2.png);
+  background: url("./../../assets/images/common/bg_text2.png");
   background-position: center left;
   background-repeat: no-repeat;
   color: #000000;
@@ -3187,11 +3193,12 @@ form button {
 }
 .project-box-style4 .image .img_inner {
   position: relative;
+  background: url("./../../assets/images/common/project_56.png") center center no-repeat;
 }
 .project-box-style4 .image img {
   height: 112px;
-  -webkit-mask-image: url(/assets/images/common/project_56.png);
-  mask-image: url(/assets/images/common/project_56.png);
+  -webkit-mask-image: url("./../../assets/images/common/project_56.png");
+  mask-image: url("./../../assets/images/common/project_56.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -3249,7 +3256,7 @@ form button {
   height: 40px;
   width: 100%;
   max-width: 250px;
-  background: url(/assets/images/common/bg_text_4.png);
+  background: url("./../../assets/images/common/bg_text_4.png");
   background-position: center right;
   background-repeat: no-repeat;
   margin-bottom: 0;
@@ -3263,7 +3270,7 @@ form button {
   height: 40px;
   max-width: 120px;
   width: 100%;
-  background: url(/assets/images/common/bg_text4.png);
+  background: url("./../../assets/images/common/bg_text4.png");
   background-position: center left;
   background-repeat: no-repeat;
   color: #000000;
@@ -3330,11 +3337,12 @@ form button {
   width: 112px;
   min-width: 112px;
   margin-right: 16px;
+  background: url("./../../assets/images/common/project_1.png") center center no-repeat;
 }
 .project-box-style5 .image img.mask {
   height: 112px;
-  -webkit-mask-image: url(/assets/images/common/project_1.png);
-  mask-image: url(/assets/images/common/project_1.png);
+  -webkit-mask-image: url("./../../assets/images/common/project_1.png");
+  mask-image: url("./../../assets/images/common/project_1.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -3400,7 +3408,7 @@ form button {
   height: 40px;
   width: 100%;
   max-width: 320px;
-  background: url(/assets/images/common/bg_text_2.png);
+  background: url("./../../assets/images/common/bg_text_2.png");
   background-position: center right;
   background-repeat: no-repeat;
   margin-bottom: 0;
@@ -3413,7 +3421,7 @@ form button {
   padding: 8px 10px;
   height: 40px;
   width: 180px;
-  background: url(/assets/images/common/bg_text3.png);
+  background: url("./../../assets/images/common/bg_text3.png");
   background-position: center left;
   background-repeat: no-repeat;
   color: #000000;
@@ -3440,7 +3448,7 @@ form button {
   justify-content: center;
   width: 100px;
   height: 110px;
-  background: url(/assets/images/backgroup/bg_counter.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_counter.png") center center no-repeat;
   background-size: contain;
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1411764706);
   margin-right: 26px;
@@ -3513,11 +3521,12 @@ form button {
   height: 90px;
   width: 90px;
   z-index: 9;
+  background: url("./../../assets/images/common/project_8.png") center center no-repeat;
 }
 .project-box-style3 .header_project .image img.mask {
   height: 90px;
-  -webkit-mask-image: url(/assets/images/common/project_8.png);
-  mask-image: url(/assets/images/common/project_8.png);
+  -webkit-mask-image: url("./../../assets/images/common/project_8.png");
+  mask-image: url("./../../assets/images/common/project_8.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -3661,7 +3670,7 @@ form button {
 }
 .team-box .image {
   z-index: 999;
-  background: url(/assets/images/backgroup/bg_img_team.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_img_team.png") center center no-repeat;
   width: 156px;
   height: 176px;
   margin: 0 auto;
@@ -3670,8 +3679,8 @@ form button {
 .team-box .image img {
   width: 156px;
   height: 176px;
-  -webkit-mask-image: url(/assets/images/backgroup/bg_img_team.png);
-  mask-image: url(/assets/images/backgroup/bg_img_team.png);
+  -webkit-mask-image: url("./../../assets/images/backgroup/bg_img_team.png");
+  mask-image: url("./../../assets/images/backgroup/bg_img_team.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -3685,12 +3694,12 @@ form button {
   margin-top: -102px;
   border-radius: 20px;
   position: relative;
-  -webkit-mask-image: url(/assets/images/backgroup/bg_team.png);
-  mask-image: url(/assets/images/backgroup/bg_team.png);
+  -webkit-mask-image: url("./../../assets/images/backgroup/bg_team.png");
+  mask-image: url("./../../assets/images/backgroup/bg_team.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
-  background: url(/assets/images/backgroup/bg_team.png);
+  background: url("./../../assets/images/backgroup/bg_team.png");
   background-position: center, center;
   background-size: cover;
   z-index: 99;
@@ -3747,12 +3756,12 @@ form button {
   margin-left: 30px;
   height: 70px;
   position: relative;
-  -webkit-mask-image: url(/assets/images/backgroup/bg_partner_2.png);
-  mask-image: url(/assets/images/backgroup/bg_partner_2.png);
+  -webkit-mask-image: url("./../../assets/images/backgroup/bg_partner_2.png");
+  mask-image: url("./../../assets/images/backgroup/bg_partner_2.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
-  background: url(/assets/images/backgroup/bg_partner_2.png);
+  background: url("./../../assets/images/backgroup/bg_partner_2.png");
   background-position: center, center;
   background-size: cover;
   display: flex;
@@ -3778,13 +3787,13 @@ form button {
 }
 .icon-box .top {
   text-align: center;
-  -webkit-mask-image: url(/assets/images/backgroup/bg_box_1.png);
-  mask-image: url(/assets/images/backgroup/bg_box_1.png);
+  -webkit-mask-image: url("./../../assets/images/backgroup/bg_box_1.png");
+  mask-image: url("./../../assets/images/backgroup/bg_box_1.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background: url(/assets/images/backgroup/bg_box_1.png);
+  background: url("./../../assets/images/backgroup/bg_box_1.png");
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3847,7 +3856,7 @@ form button {
   justify-content: center;
   width: 46px;
   height: 41px;
-  background: url(/assets/images/backgroup/bg_num_box1.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_num_box1.png") center center no-repeat;
   background-size: contain;
   left: 50%;
   transform: translateX(-50%);
@@ -3958,6 +3967,7 @@ form button {
 }
 .roadmap-box .date {
   font-size: 17px;
+  font-family: "Space Grotesk", sans-serif;
 }
 .roadmap-box ul li {
   padding-right: 10px;
@@ -4077,11 +4087,12 @@ form button {
   width: 90px;
   min-width: 90px;
   margin-right: 20px;
+  background: url("./../../assets/images/common/project_24.png") center center no-repeat;
 }
 .project-box-style6 .content .img-box .image_inner img.mask {
   height: 90px;
-  -webkit-mask-image: url(/assets/images/common/project_24.png);
-  mask-image: url(/assets/images/common/project_24.png);
+  -webkit-mask-image: url("./../../assets/images/common/project_24.png");
+  mask-image: url("./../../assets/images/common/project_24.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -4250,8 +4261,7 @@ form button {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  left: auto !important;
-  padding-right: 26px;
+  padding-right: 35px;
 }
 .project-box-style7 .content-progress-box.style2 .progress-title-holder span .progress-number-mark span {
   width: auto;
@@ -4332,8 +4342,8 @@ form button {
   width: 125px;
   min-width: 125px;
   height: 140px;
-  -webkit-mask-image: url(/assets/images/backgroup/bg_icon_box.png);
-  mask-image: url(/assets/images/backgroup/bg_icon_box.png);
+  -webkit-mask-image: url("./../../assets/images/backgroup/bg_icon_box.png");
+  mask-image: url("./../../assets/images/backgroup/bg_icon_box.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -4342,7 +4352,7 @@ form button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/assets/images/backgroup/bg_icon_box.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_icon_box.png") center center no-repeat;
   background-size: contain;
 }
 .icon-box-style3 .icon img {
@@ -4559,15 +4569,20 @@ form button {
   height: 90px;
   width: 90px;
   min-width: 90px;
+  background: url("./../../assets/images/common/project_24.png") center center no-repeat;
 }
-.project_detail.project-box-style5 .image img {
+.project_detail.project-box-style5 .image img.mask {
   height: 90px;
-  -webkit-mask-image: url(/assets/images/common/project_24.png);
-  mask-image: url(/assets/images/common/project_24.png);
+  -webkit-mask-image: url("./../../assets/images/common/project_24.png");
+  mask-image: url("./../../assets/images/common/project_24.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+.project_detail.project-box-style5 .image .shape {
+  width: 24px;
+  height: 24px;
 }
 .project_detail.project-box-style5 .content .heading {
   font-size: 28px;
@@ -4651,14 +4666,14 @@ form button {
   position: relative;
   overflow: hidden;
   margin-right: 30px;
-  background: url(/assets/images/backgroup/bg_img_team_2.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_img_team_2.png") center center no-repeat;
 }
 .team-box-style2 .image img {
   z-index: 999;
   width: 102px;
   height: 116px;
-  -webkit-mask-image: url(/assets/images/backgroup/bg_img_team_2.png);
-  mask-image: url(/assets/images/backgroup/bg_img_team_2.png);
+  -webkit-mask-image: url("./../../assets/images/backgroup/bg_img_team_2.png");
+  mask-image: url("./../../assets/images/backgroup/bg_img_team_2.png");
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -5294,6 +5309,9 @@ form button {
 .swiper-pagination .swiper-pagination-bullet span:first-child {
   margin-left: 0 !important;
 }
+.swiper-pagination.bottom_0 {
+  bottom: 0;
+}
 
 .slider-1 .swiper-wrapper {
   margin-bottom: 20px;
@@ -5311,7 +5329,7 @@ form button {
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background: url(/assets/images/common/bg_arrow.png) center center no-repeat;
+  background: url("./../../assets/images/common/bg_arrow.png") center center no-repeat;
   background-size: cover;
 }
 .prev_slider.swiper-button-disabled,
@@ -5381,6 +5399,7 @@ form button {
 }
 .flat-tabs .menu-tab li.active, .flat-tabs .menu-tab li:hover {
   background: #86FF00;
+  cursor: pointer;
 }
 .flat-tabs .menu-tab li.active span, .flat-tabs .menu-tab li:hover span {
   color: #09121D;
@@ -7290,6 +7309,9 @@ form button {
 .home1 .tf-section.project_2 {
   padding-bottom: 101px;
 }
+.home1 .tf-section.project_2 .overlay {
+  height: 125%;
+}
 .home1 .tf-section.project_3 {
   padding-bottom: 115px;
 }
@@ -7345,7 +7367,7 @@ form button {
   padding-bottom: 56px;
 }
 .home2 .tf-section.roadmap {
-  padding-bottom: 58px;
+  padding-bottom: 100px;
 }
 .home2 .tf-section.tf_team {
   padding-bottom: 80px;
@@ -7401,13 +7423,12 @@ form button {
   padding: 0;
 }
 .home3 .tf_CTA_2 .overlay {
-  height: 70%;
+  height: 100%;
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   width: 100%;
-  background: linear-gradient(180deg, rgba(9, 18, 29, 0) 10.64%, #09121D 100%), url("./../../assets/images/backgroup/cta_2.jpg");
+  background: url("./../../assets/images/backgroup/cta_2.jpg");
   mix-blend-mode: luminosity;
   opacity: 0.2;
   background-repeat: no-repeat;
@@ -7422,20 +7443,23 @@ form button {
   position: absolute;
 }
 .home3 .tf_CTA_2 .image_cta .icon.icon_1 {
-  top: 0px;
-  left: 0;
+  top: -20px;
+  left: 2px;
   transform: rotate(-22.59deg);
 }
 .home3 .tf_CTA_2 .image_cta .icon.icon_2 {
-  top: 30%;
+  position: absolute;
+  top: 70px;
   transform: rotate(200deg);
   right: -115px;
 }
 .home3 .tf_CTA_2 .image_cta .move4 {
-  margin-left: -62px;
+  position: absolute;
+  top: -25px;
+  right: -20px;
 }
 .home3 .tf_CTA_2 .tf-title {
-  padding: 105px 0;
+  padding: 48px 0;
 }
 .home3 .tf_CTA_2 .tf-title .sub {
   margin-bottom: 20px;
@@ -7447,7 +7471,7 @@ form button {
   top: 180px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #09121D 0%, rgba(9, 18, 29, 0) 55.73%, #09121D 100%), url(./../../assets/images/backgroup/bg_home3.png);
+  background: linear-gradient(180deg, #09121D 0%, rgba(9, 18, 29, 0) 55.73%, #09121D 100%), url("./../../assets/images/backgroup/bg_home3.png");
   mix-blend-mode: luminosity;
   opacity: 0.35;
   background-repeat: no-repeat;
@@ -7506,7 +7530,7 @@ form button {
   background-size: cover;
 }
 .home3 .tf-section.project_2 {
-  padding: 94px 0 130px;
+  padding: 152px 0 130px;
 }
 .home3 .tf-section.project {
   padding-top: 135px;
@@ -7514,7 +7538,7 @@ form button {
 }
 .home3 .tf-section.features {
   padding-top: 130px;
-  padding-bottom: 72px;
+  padding-bottom: 128px;
 }
 .home3 .tf-section.three_step {
   padding-bottom: 130px;
@@ -7619,7 +7643,7 @@ form button {
 .faq-page .tf-section.questions {
   padding: 102px 0;
   display: block;
-  background: url(./../../assets/images/backgroup/bg_question.png) center center no-repeat;
+  background: url("./../../assets/images/backgroup/bg_question.png") center center no-repeat;
   mix-blend-mode: luminosity;
 }
 .faq-page .tf-section.tf-faq {
@@ -8775,6 +8799,9 @@ img.mfp-img {
 }
 
 @media only screen and (max-width: 1200px) {
+  .home3 .tf_CTA_2 .image_cta .move4 {
+    right: 40px;
+  }
   .header .main-nav {
     left: 22%;
   }
@@ -8830,11 +8857,20 @@ img.mfp-img {
   }
 }
 @media only screen and (max-width: 991px) {
+  .home2 .tf-section.partner_CTA {
+    padding: 70px 0;
+  }
+  .tf-section.tf_CTA .image_cta {
+    margin-top: 0;
+  }
   .mobile-button {
     display: block;
   }
   .header #site-header-inner .tf-button {
-    margin-right: 35px;
+    margin-right: 40px;
+    height: 45px;
+    padding: 16px 20px;
+    font-size: 12px;
   }
   .tokenomics-wrapper {
     overflow-x: auto;
@@ -8944,6 +8980,15 @@ img.mfp-img {
   }
 }
 @media only screen and (max-width: 767px) {
+  .home3 .tf_CTA_2 .image_cta .move4 {
+    position: relative;
+    left: 50px;
+    right: auto;
+    top: 0;
+  }
+  .home3 .tf_CTA_2 .image_cta .icon.icon_1 {
+    left: 100px;
+  }
   .main .page-title .slider-st2 {
     padding-bottom: 70px;
   }
@@ -9090,7 +9135,8 @@ img.mfp-img {
   .features .wrapper-box .icon-box-style2 {
     width: calc(50% - 30px);
   }
-  .home3 .tf-section.tf_partner,
+  .home3 .tf-section.project_2,
+.home3 .tf-section.tf_partner,
 .home3 .tf-section.project {
     padding-top: 70px !important;
   }
@@ -9099,7 +9145,6 @@ img.mfp-img {
   }
   #footer .footer-main,
 .home3 .tf-section.tf_CTA,
-.home3 .tf-section.project_2,
 .home3 .tf-section.features {
     padding-top: 0;
   }
